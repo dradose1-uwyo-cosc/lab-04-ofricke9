@@ -1,9 +1,9 @@
-# Your Name Here
+# Oliver Fricke
 # UWYO COSC 1010
-# Submission Date
+# 10-3-24
 # Lab 03 
-# Lab Section: 
-# Sources, people worked with, help given to: 
+# Lab Section: 13
+# Sources, people worked with, help given to: N/A
 # your
 # comments
 # here
@@ -98,8 +98,26 @@ min_temps = [
 # Write a single for loop to calculate both the average maximum temperature and the average minimum temperature.
 # You cannot use any pre-existing functions (like mean()) and must perform the calculations manually.
 # Output the results of both calculations.
+summax = 0
+summin = 0
+for i in range(len(max_temps)):
+    summax += max_temps[i]
+    summin += min_temps[i]
+averagemaximum = summax/len(max_temps)
+averageminimum = summin/len(max_temps)
+print(f"The average maximum temperature is:", averagemaximum)
+print(f"The average minimum temperature is:", averageminimum)
+    
+
+
 
 # For the next part, determine the highest and lowest recorded temperatures.
 # HINT: You can find this information without using any logic or looping.
+
+maxtemp = max(max_temps)
+mintemp = min(min_temps)
+
+print(f"The highest temperature recorded in Laramie in 2023 was:", maxtemp)
+print(f"The lowest temperature recorded in Laramie in 2023 was:", mintemp)
 
 
